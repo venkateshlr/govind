@@ -1,0 +1,46 @@
+
+{
+  
+    "/users/login":
+    {
+      "target": "http://192.168.0.106:3200/",
+      "secure": false
+    },
+    "/users/signup":
+    {
+      "target": "http://192.168.0.106:3200/",
+      "secure": false
+    },
+    "/users/productinfo":
+    {
+      "target": "http://192.168.0.106:3200/",
+      "secure": false
+    },
+    "/users":
+    {
+      "target": "http://192.168.0.106:3200/",
+      "secure": false
+    },
+    "/uploads/courseImages/test.jpg":
+    {
+      "target": "http://192.168.0.106:3200/",
+      "secure": false
+    },
+    "/uploads/courseImages/tata.jpg":{
+      "target": "http://192.168.0.106:3200/",
+      "secure": false
+    },
+    "/uploads/img/tata.jpg":{
+      "target": "http://192.168.0.106:3200/",
+      "secure": false
+    },
+    "/uploads/img/saffola.jpg":{
+      "target": "http://192.168.0.106:3200/",
+      "secure": false
+    },
+    "/uploads/img/jordan1.jpg":{
+      "target": "http://192.168.0.106:3200/",
+      "secure": false
+    }
+    
+  }

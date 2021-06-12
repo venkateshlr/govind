@@ -1,0 +1,93 @@
+<!-- <ng-container *ngIf="this.mSharedPreferences.cartShow"> -->
+    <ng-container>
+    
+    <section class="product">
+        <div class="product-image">
+            <div class="product-image">
+                <img src="{{ imagePath }}" alt="">
+            </div>
+        </div>
+        <div class="dummy">
+          <div class="product-info">
+              <h3 class="product-name">{{ productName }}</h3>
+          </div>
+        </div>
+        <div class="dummy">
+          <div class="product-info">
+              <h3 class="product-name">{{ priceMYR }}</h3> 
+
+          </div>
+        </div>
+        <div class="dummy">
+      
+          <div class="product-options">
+              <a href="#" class="buy">Buy Now</a>
+          </div>
+      
+          
+        </div>
+    </section>
+  </ng-container>
+  <ng-template #containerProduct>  </ng-template> 
+
+
+<!-- <div *ngFor="let list of products"> 
+  <li *ngFor="let contact of contacts">
+  <h3>{{ list.productName }}</h3>
+  <h4>{{ list.priceMYR }}</h4>
+  <p>{{ list.imagePath }}</p>
+  
+</div> -->
+<!-- 
+<ng-container *ngIf="this.mSharedPreferences.offerShow">
+  <section class="offer section">
+      <h2 class="section-title">OFFER</h2>
+      <div class="offer__container bd-grid">
+          <div class="offer__data">
+              <h3 class="offer__title">10% OFF</h3>
+              <p class="offer__description">Samsung Galaxy</p>
+              <a href="#" class="button">Shop Now</a>
+          </div>
+  
+          <img src="./assets/img/sam.png" alt="" class="offer__img">
+      </div>
+  </section>            
+</ng-container>
+  
+<ng-template #containerProduct>  </ng-template>
+
+
+<ng-container *ngIf="this.mSharedPreferences.productdetailsShow">
+  <section class="product">
+      <div class="product-image">
+          <img src="{{ imagePath }}" alt="">
+      </div>
+      <div class="dummy">
+      <div class="product-info">
+          
+          
+          <h3 class="product-price">RM. {{ priceMYR }}</h3>
+          <h1 class="product-title">{{ productName }}</h1>
+          <p class="product-description">{{ detailedDescription }}
+          </p>
+          <p class="product-info">
+              <br> {{ detailedDescription1 }}
+              <br> {{ detailedDescription2 }}
+          </p>
+      </div>
+  
+      <div class="product-options">
+          <a href="#" class="buy">Buy Now</a>
+      </div>
+  
+      <div class="product-options">
+           <a href="#" class="cart">Add To Cart</a> 
+          <a (click)="showCart()" class="cart">Add To Cart</a> 
+          
+      </div>
+      </div>
+  </section>
+  </ng-container>
+--> 
+
+ 

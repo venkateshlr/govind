@@ -1,0 +1,58 @@
+<ng-container *ngIf="show">
+<section class="featured section" id="featured">
+    <h2 class="section-title">FEATURED</h2>
+
+ <!--     <div class="featured__container bd-grid">
+        <article class="sneaker">
+            <div class="sneaker__sale">SALE</div>
+            <img src="assets/img/jordan1.jpg" alt="" class="sneaker__img">
+            <span class="sneaker__name">Nike Jordan</span>
+            <span class="sneaker__preci">$149.99</span>
+            
+            <a (click)="display('assets/img/saffola.jpg')" class="button-light"> Add To Cart 11<i class='bx bx-right-arrow-alt button-icon' ></i></a>
+        </article>
+
+        <article class="sneaker">
+            <div class="sneaker__sale">SALE</div>
+            <img src="assets/img/saffola.jpg" alt="" class="sneaker__img">
+            <span class="sneaker__name">Saffola Canola Oil</span>
+            <span class="sneaker__preci">$9.99</span>
+            <a href="" class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon' ></i></a>
+        </article>
+
+        <article class="sneaker">
+            <div class="sneaker__sale">SALE</div>
+            <img src="assets/img/tata.jpg" alt="" class="sneaker__img">
+            <span class="sneaker__name">Tata Salt</span>
+            <span class="sneaker__preci">$5.99</span>
+            <a href="" class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon' ></i></a>
+        </article>
+        
+    </div> -->
+    <!-- <div class="featured__container bd-grid" *ngIf="imageToShow$">
+        
+        <p>The message: {{ imageToShow | async }}</p>
+    </div>-->
+    <div class="featured__container bd-grid">
+
+        <!-- <button type="button" (click)="getdisplay('/uploads/courseImages/test.jpg')">Get Image</button> -->
+
+            <img [src]="imageToShow"
+                alt="Place image title"
+                *ngIf="!isImageLoading; else noImageFound">
+            <ng-template #noImageFound>
+                <img src="assets/img/tata.jpg" alt="Fallbackimage">
+            </ng-template> 
+
+            <article class="sneaker">
+                <div class="sneaker__sale">SALE</div>
+                <img [src]="imageToShow" alt="Place image title"  class="sneaker__img">
+                <span class="sneaker__name">Tata Salt</span>
+                <span class="sneaker__preci">$5.99</span>
+                <a href="" class="button-light">Add To Cart <i class='bx bx-right-arrow-alt button-icon' ></i></a>
+            </article> 
+
+    </div> 
+</section>
+</ng-container>
+<ng-template #containerProduct>  </ng-template>

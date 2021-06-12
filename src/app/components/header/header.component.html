@@ -1,0 +1,52 @@
+
+<ng-container>
+<header class="l-header" id="header">
+    <nav class="nav bd-grid">
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bxs-grid'></i>
+        </div>
+  
+       
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <!-- <img src="{{ this.mSharedPreferences.loginPicture }}" alt=""> -->
+                    <img src="/uploads/img/galaxy2" alt=""> 
+                </li>
+                
+                <li class="nav__item"><a> {{ this.mSharedPreferences.loginMobile }} </a></li>
+                <li class="nav__item"><a> {{ this.mSharedPreferences.loginUsername }}</a></li>
+                <li class="nav__item"><a (click)="login()"> LOGIN</a></li>
+                <li class="nav__item"><a (click)="signup()"> SIGNUP</a></li>
+  
+              </ul>
+        </div>
+       
+    </nav> 
+    <nav class="nav bd-grid">
+      <div class="nav__toggle" id="nav-toggle">
+          <i class='bx bxs-grid'></i>
+      </div>
+  
+      
+      <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+              <!-- <li class="nav__item"><a routerLink="/product" class="nav__link active">Home</a></li> -->
+              <!-- <li class="nav__item"><a (click)="router.navigate(['/home']);"> HOME</a></li> -->
+              <!-- <li><a routerLink="/home">Home</a></li> -->
+              <li class="nav__item"><a (click)="dummy()"> Home</a></li>
+              <li class="nav__item"><a (click)="dummy()"> ABOUTUS</a></li>
+              <li class="nav__item"><a (click)="dummy()"> BLOG</a></li>
+              <li class="nav__item"><a (click)="dummy()"> FAQS </a></li>
+              <li class="nav__item"><a (click)="dummy()"> CONTACTUS </a></li>
+   
+          </ul>
+      </div>
+      <div class="nav__shop">
+          <i class='bx bx-shopping-bag' ></i>
+      </div>
+  </nav> 
+  </header> 
+</ng-container>
+<ng-template #container>  </ng-template>
+<ng-template #containerFooter>  </ng-template>

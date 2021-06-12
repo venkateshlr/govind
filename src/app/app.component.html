@@ -1,0 +1,104 @@
+
+<!-- <header class="l-header" id="header">
+  <nav class="nav bd-grid">
+      <div class="nav__toggle" id="nav-toggle">
+          <i class='bx bxs-grid'></i>
+      </div>
+
+     
+      <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+              
+              <li class="nav__item"><a> +123-1234567890</a></li>
+              <li class="nav__item"><a> {{ this.mSharedPreferences.loginUsername }}</a></li>
+              <li class="nav__item"><a (click)="login()"> LOGIN</a></li>
+              <li class="nav__item"><a (click)="signup()"> SIGNUP</a></li>
+
+            </ul>
+      </div>
+     
+  </nav> 
+  <nav class="nav bd-grid">
+    <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bxs-grid'></i>
+    </div>
+
+    
+    <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+           
+            <li><a routerLink="/home">Signin</a></li>
+            
+           
+           
+ 
+        </ul>
+    </div>
+    
+
+    
+    <div class="nav__shop">
+        <i class='bx bx-shopping-bag' ></i>
+    </div>
+</nav> 
+</header> 
+-->
+
+<!-- <div class="nav__shop" *ngIf="true; then container1 else containerFeatured2"></div>-->
+  <!-- <ng-template #container *ngIf="true">  </ng-template> 
+  <ng-template #containerHeader *ngIf="true"></ng-template> 
+  <ng-template #containerFeatured *ngIf="true">  </ng-template> -->
+
+  <!-- <div *ngIf="false; then containerHeader else containerFeatured"> 
+    This content is not shown
+</div>
+ 
+<ng-template #containerHeader>
+    content to render when the condition is true.
+</ng-template>
+ 
+<ng-template #container>
+    content to render when condition is false.
+</ng-template>
+
+<ng-template #containerFeatured>
+    content to render when condition is false.
+</ng-template> -->
+  <ng-template #containerHeader></ng-template>
+  <ng-template #container>  </ng-template> 
+  <ng-template #containerFeatured>  </ng-template> 
+  <ng-template #containerCollections>  </ng-template>
+  <ng-template #containerTrending></ng-template>
+  <ng-template #containerOffer>  </ng-template>
+  <ng-template #containerNewcollections>  </ng-template>
+  <ng-template #containerNewsletter>  </ng-template>
+  <ng-template #containerFooter>  </ng-template>  
+  <router-outlet></router-outlet>
+  
+<!-- 
+
+<div class="app">
+    <header>
+      <section>
+       
+      </section>
+      <nav>
+        <ul>
+          <li><a routerLink="/">Home</a></li>
+          <li><a routerLink="/about">About</a></li>
+          <li><a routerLink="/contact">Contact</a></li>
+          <li><a routerLink="/config">Signin</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  
+    <footer>
+      <a href="https://www.ganatan.com/">&copy; 2020 - www.ganatan.com</a>
+    </footer>
+  
+  </div>
+-->

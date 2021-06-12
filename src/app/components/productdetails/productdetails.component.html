@@ -1,0 +1,35 @@
+<ng-container *ngIf="this.mSharedPreferences.productdetailsShow">
+<section class="product">
+    <div class="product-image">
+        <img src="{{ imagePath }}" alt="">
+    </div>
+    <div class="dummy">
+    <div class="product-info">
+        <!--<div class="advantages">
+            <img src="./assets/img/fd.png" alt="Free Delivery" class="adv">
+            <img src="./assets/img/free-return.png" alt="Free Returns" class="adv">
+        </div>-->
+        <!-- <h3 class="product-price">$149.99</h3> -->
+        <h3 class="product-price">RM. {{ priceMYR }}</h3>
+        <h1 class="product-title">{{ productName }}</h1>
+        <p class="product-description">{{ detailedDescription }}
+        </p>
+        <p class="product-info">
+            <br> {{ detailedDescription1 }}
+            <br> {{ detailedDescription2 }}
+        </p>
+    </div>
+
+    <div class="product-options">
+        <a href="#" class="buy">Buy Now</a>
+    </div>
+
+    <div class="product-options">
+        <!-- <a href="#" class="cart">Add To Cart</a> -->
+        <a (click)="showCart()" class="cart">Add To Cart</a> 
+        
+    </div>
+    </div>
+</section>
+</ng-container>
+<ng-template #containerProduct>  </ng-template> 

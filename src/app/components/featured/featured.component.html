@@ -1,0 +1,23 @@
+
+<ng-container *ngIf="this.mSharedPreferences.featuredShow">
+    
+    <section class="featured section" id="featured">
+        
+        <h2 class="section-title">FEATURED</h2>
+            <div class="featured__container bd-grid">
+                <article class="sneaker" *ngFor="let list of products">
+                    <div class="sneaker__sale">SALE</div>
+                    <img src="{{ list.imagePath }}" alt="Place image title"  class="sneaker__img"> 
+                    <span class="sneaker__name">{{ list.productName }}</span>
+                    <span class="sneaker__preci">RM {{list.priceMYR }}</span> 
+                    <!-- <a (click)="display(list.productName, list.priceMYR, list.imagePath, list.detailedDescription,list.detailedDescription1,list.detailedDescription2, list)" class="button-light"> Add To Cart<i class='bx bx-right-arrow-alt button-icon' ></i></a> -->
+                    <a (click)="display(list)" class="button-light"> Add To Cart<i class='bx bx-right-arrow-alt button-icon' ></i></a> 
+                </article> 
+
+        </div> 
+    </section>
+
+</ng-container>
+<ng-template #containerProduct>  </ng-template>
+
+
