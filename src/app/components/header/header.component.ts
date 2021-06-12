@@ -77,10 +77,9 @@ export class HeaderComponent implements OnInit {
   signup(): void{
     console.log("we are in signup");
     const viewContainerRef = this.profileHost.viewContainerRef;
-    //this.entry.clear();
-    //const factory = this.resolver.resolveComponentFactory(SignupComponent);
-    //const componentRef = this.entry.createComponent(factory);
-    
+    this.entry.clear();
+    const factory = this.resolver.resolveComponentFactory(SignupComponent);
+    const componentRef = this.entry.createComponent(factory);    
     this.configWebService.loadComponent(viewContainerRef)
   }
 

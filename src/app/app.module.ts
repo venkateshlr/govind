@@ -32,12 +32,13 @@ import { LoginComponent } from './components/login/login.component';
 import { ConfigWebService } from './service/WebService';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 const routes: Routes = [
   {
       path: 'home',
-      component: AppComponent
+      component: DashboardComponent
   },
   /*{
     path: 'order',
@@ -53,6 +54,10 @@ const routes: Routes = [
         //component: SignupAppComponent
         redirectTo: '/login'
         }   */
+      {
+        path:'**',
+        redirectTo:'home'
+      }
 ]
 
 @NgModule({
@@ -74,7 +79,8 @@ const routes: Routes = [
     LoginComponent,
     ProductdetailsComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    DashboardComponent
     
   ],
   imports: [
